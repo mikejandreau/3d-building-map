@@ -930,7 +930,21 @@ button:focus {
 	display: none;
 }
 
-@media screen and (max-width: 65.625em), screen and (max-height: 40.625em) {
+
+/*@media screen and (max-width: 1200px) {
+	.levels {
+		margin: -34vmin 0 0 -34vmin;
+	}
+
+	.level {
+		position: relative;
+		width: 80%;
+		height: 80%;
+		cursor: pointer;
+	}
+}*/
+
+@media screen and (max-width: 1023px), screen and (max-height: 767px) {
 	.main {
 		width: 100vw;
 	}
