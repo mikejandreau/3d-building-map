@@ -48,7 +48,7 @@ button:focus{outline:0}
 .hidden{position:absolute;overflow:hidden;width:0;height:0;pointer-events:none}
 .icon{display:block;width:1em;height:1em;margin:0 auto;fill:currentColor}
 .container{position:relative;overflow-x:hidden;width:100vw;height:100vh}
-.codrops-header{position:absolute;z-index:100;top:0;left:0;display:-webkit-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:1.5em 1em;text-align:center;color:red}
+.codrops-header{position:absolute;z-index:100;top:0;left:0;display:-webkit-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:1.5em 1em;text-align:center}
 .codrops-header h1{font-size:1.15em;font-weight:normal;line-height:1;margin:0 0 0 1em}
 .codrops-links{position:relative;display:inline-block;text-align:center;white-space:nowrap}
 .codrops-links::after{content:'';position:absolute;top:0;left:50%;width:1px;height:100%;background:rgba(0,0,0,0.1);-webkit-transform:rotate3d(0,0,1,22.5deg);transform:rotate3d(0,0,1,22.5deg)}
