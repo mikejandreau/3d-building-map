@@ -177,9 +177,10 @@ button:focus {
 	left: 50%;
 }
 
+
 .surroundings {
-	width: 192vmin;
 	/* double of building map */
+	width: 192vmin;
 	height: 128vmin;
 	margin: -64vmin 0 0 -96vmin;
 	pointer-events: none;
@@ -189,6 +190,7 @@ button:focus {
 
 .surroundings__map {
 	opacity: 0.3;
+	width: 100%;
 	max-width: 100%;
 	display: block;
 }
@@ -207,6 +209,7 @@ button:focus {
 
 .surroundings,
 .levels {
+	// rotation of all levels and background
 	// transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
 }
 
@@ -373,6 +376,7 @@ button:focus {
 
 .level.level--current {
 	/* go to center */
+	// rotation and centering of current level
 	// transform: translateZ(15vmin) rotate3d(0,0,1,20deg);
 }
 
