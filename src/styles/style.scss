@@ -10,13 +10,7 @@ $color_lt_gray: #eeeeee;
 
 
 
-@font-face {
-	font-family: 'codropsicons';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/codropsicons/codropsicons.eot');
-	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}
+
 
 *,
 *::after,
@@ -684,6 +678,7 @@ button:focus {
 	border: 0;
 	background: #515158;
 	border-radius: 0;
+	height: 4em;
 }
 
 .search__input:focus {
@@ -996,9 +991,11 @@ button:focus {
 	}
 	.spaces-list,
 	.search {
-		width: 100vw;
-		right: 100%;
+		// width: 100vw;
+		width: 300px;
+		right: -100%;
 		left: auto;
+		transition: .4s ease-in-out;
 	}
 	.spaces-list--open,
 	.spaces-list--open .search {
@@ -1019,7 +1016,7 @@ button:focus {
 		overflow: hidden;
 	}
 	.container--overflow {
-		overflow: auto;
+		overflow-y: auto;
 	}
 	.content__item {
 		overflow: auto;
