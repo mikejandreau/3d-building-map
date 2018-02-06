@@ -35,7 +35,6 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-@font-face{font-family:'codropsicons';font-weight:normal;font-style:normal;src:url("../fonts/codropsicons/codropsicons.eot");src:url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"),url("../fonts/codropsicons/codropsicons.woff") format("woff"),url("../fonts/codropsicons/codropsicons.ttf") format("truetype"),url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg")}
 *,*::after,*::before{box-sizing:border-box}
 .clearfix::before,.clearfix::after{content:'';display:table}
 .clearfix::after{clear:both}
@@ -124,7 +123,7 @@ button:focus{outline:0}
 .content__button--hidden{pointer-events:none;opacity:0;-webkit-transition:none;transition:none}
 .spaces-list{position:absolute;top:0;right:0;width:300px;min-height:100vh;padding:5em 0 1em;background:#fff}
 .search{position:absolute;z-index:100;top:0;right:0;left:0}
-.search__input{width:100%;padding:1.315em 2em;color:#fff;border:0;background:#515158;border-radius:0}
+.search__input{width:100%;padding:1.315em 2em;color:#fff;border:0;background:#515158;border-radius:0;height:4em}
 .search__input:focus{outline:0}
 .label{position:absolute;top:4em;right:0}
 .label__text{font-size:.85em;line-height:1;display:block;padding:1em;color:#e4e4e4}
@@ -196,12 +195,12 @@ button:focus{outline:0}
 .pin--4-7{top:58vmin;left:10vmin}
 .open-search,.close-search{display:none}
 @media screen and (max-width:1023px),screen and (max-height:767px){.main{width:100vw}
-.spaces-list,.search{width:100vw;right:100%;left:auto}
+.spaces-list,.search{width:300px;right:-100%;left:auto;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out}
 .spaces-list--open,.spaces-list--open .search{right:0}
 .open-search,.close-search{position:absolute;display:block;top:0;right:0;z-index:1000}
 .buildingnav{top:4em}
 .container{overflow:hidden}
-.container--overflow{overflow:auto}
+.container--overflow{overflow-y:auto}
 .content__item{overflow:auto}
 .library-header{padding-right:4em;text-align:left}
 }
