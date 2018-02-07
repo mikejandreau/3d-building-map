@@ -96,7 +96,7 @@ button:focus {
 	padding: 1.5em 1.2em;
 	// text-align: center;
 
-	display: none; // testing
+	// display: none; // testing
 
 	// color: red;
 
@@ -212,7 +212,16 @@ button:focus {
 .surroundings,
 .levels {
 	// rotation of all levels and background
-	// transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
+	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
+}
+
+
+/* Current level */
+
+.level.level--current {
+	/* go to center */
+	// rotation and centering of current level
+	transform: translateZ(15vmin) rotate3d(0,0,1,20deg);
 }
 
 .level {
@@ -227,15 +236,16 @@ button:focus {
 }
 
 .level::after {
-	font-size: 2.8vmin;
-	line-height: 0;
-	position: absolute;
-	z-index: 100;
-	top: -2em;
-    left: 3.5em;
+    font-size: 3.2vmin;
+    line-height: 0;
+    position: absolute;
+    z-index: 100;
+    top: -1em;
+    left: 7em;
 	white-space: nowrap;
 	color: #7d7d86;
-	// transform: rotateZ(45deg) rotateX(-70deg) translateZ(5vmin);
+	// rotation of floor level numbers
+	transform: rotateZ(45deg) rotateX(-70deg) translateZ(5vmin);
 	transition: transform 1s, color 0.3s;
 	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 
@@ -293,33 +303,32 @@ button:focus {
 }
 
 
-.level--1 {
-
-	border: 1px solid green;
-}
+// .level--1 {
+// 	border: 1px solid green;
+// }
 
 .level--2 {
-	// transform: translateZ(10vmin);
+	transform: translateZ(10vmin);
 
-	border: 1px solid red;
+	// border: 1px solid red;
 	// opacity: 0.2;
-	display: none;
+	// display: none;
 }
 
 .level--3 {
-	// transform: translateZ(20vmin);
+	transform: translateZ(20vmin);
 
-	border: 1px solid red;
+	// border: 1px solid orange;
 	// opacity: 0;
-	display: none;
+	// display: none;
 }
 
 .level--4 {
-	// transform: translateZ(30vmin);
+	transform: translateZ(30vmin);
 
-	border: 1px solid red;
+	// border: 1px solid green;
 	// opacity: 0;
-	display: none;
+	// display: none;
 }
 
 
@@ -374,13 +383,6 @@ button:focus {
 	transition-delay: 0.45s;
 }
 
-/* Current level */
-
-.level.level--current {
-	/* go to center */
-	// rotation and centering of current level
-	// transform: translateZ(15vmin) rotate3d(0,0,1,20deg);
-}
 
 /* Navigation classes */
 .levels--open .level,
@@ -479,6 +481,11 @@ button:focus {
 .map__lake {
 	/*fill: #a2bbdd;*/
 	fill: #bdbdbd;
+}
+
+.map__steps {
+	/*fill: #a2bbdd;*/
+	fill: #efefef;
 }
 
 .map__space {
@@ -732,7 +739,7 @@ button:focus {
 
 .grouped-by-category [data-category='3']:first-child::before,
 .grouped-by-category :not([data-category='3']) + [data-category='3']::before {
-	content: 'Administration';
+	content: 'Labs & Study Areas';
 	color: #dc4b7c;
 }
 
@@ -808,7 +815,8 @@ button:focus {
 	width: 5.5vmin;
 	height: 8.25vmin;
 	margin: -8.25vmin 0 0 -2.25vmin; /* let the bottom tip be the reference point for individual coordinates */
-	// transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);
+	// rotation of pins
+	transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);
 	transform-origin: 50% 100%;
 	transform-style: preserve-3d;
 }
@@ -886,6 +894,9 @@ button:focus {
 	fill: white;
 	fill-opacity: 0.6;
 	transition: fill-opacity 0.3s;
+
+	// hide icons for now
+	opacity: 0;
 }
 
 .pin--active .icon--logo,
@@ -922,43 +933,43 @@ button:focus {
 
 
 /* Pins for floor 1 */
-.pin--1-1 { top: 4vmin; left: 66vmin; }
+.pin--1-1 { top: 4vmin; left: 65vmin; }
 .pin--1-2 { top: 9vmin; left: 66vmin; }
-.pin--1-3 { top: 4vmin; left: 61vmin; }
-.pin--1-4 { top: 13vmin; left: 65vmin; }
-.pin--1-5 { top: 4vmin; left: 41vmin; }
-.pin--1-6 { top: 4vmin; left: 45vmin; }
+.pin--1-3 { top: 3vmin; left: 60vmin; }
+.pin--1-4 { top: 14vmin; left: 67vmin; }
+.pin--1-5 { top: 4vmin; left: 40vmin; }
+.pin--1-6 { top: 6vmin; left: 45vmin; }
 .pin--1-7 { top: 36vmin; left: 61vmin; }
 .pin--1-8 { top: 56vmin; left: 78vmin; }
-.pin--1-9 { top: 51vmin; left: 47vmin; }
+.pin--1-9 { top: 51vmin; left: 41vmin; }
 
 /* Pins for floor 2 */
-.pin--2-1 { top: 7vmin; left: 22vmin; }
-.pin--2-2 { top: 39vmin; left: 5vmin; }
-.pin--2-3 { top: 21vmin; left: 84vmin; }
-.pin--2-4 { top: 39vmin; left: 53vmin; }
-.pin--2-5 { top: 14vmin; left: 50vmin; }
-.pin--2-6 { top: 60vmin; left: 15vmin; }
-.pin--2-7 { top: 34vmin; left: 37vmin; }
-.pin--2-8 { top: 52vmin; left: 74vmin; }
+.pin--2-1 { top: 10vmin; left: 28vmin; }
+.pin--2-2 { top: 43vmin; left: 17vmin; }
+.pin--2-3 { top: 31vmin; left: 78vmin; }
+.pin--2-4 { top: 36vmin; left: 57vmin; }
+.pin--2-5 { top: 19vmin; left: 29vmin; }
+.pin--2-6 { top: 39vmin; left: 29vmin; }
+.pin--2-7 { top: 39vmin; left: 36vmin; }
+.pin--2-8 { top: 57vmin; left: 78vmin; }
+.pin--2-9 { top: 24vmin; left: 33vmin; }
 
 /* Pins for floor 3 */
-.pin--3-1 { top: 17vmin; left: 15vmin; }
-.pin--3-2 { top: 42vmin; left: 5vmin; }
-.pin--3-3 { top: 19vmin; left: 85vmin; }
-.pin--3-4 { top: 61vmin; left: 57vmin; }
-.pin--3-5 { top: 58vmin; left: 25vmin; }
-.pin--3-6 { top: 30vmin; left: 57vmin; }
-.pin--3-7 { top: 32vmin; left: 37vmin; }
+.pin--3-2 { top: 45vmin; left: 14vmin; }
+.pin--3-3 { top: 20vmin; left: 54vmin; }
+.pin--3-4 { top: 19vmin; left: 41vmin; }
+.pin--3-5 { top: 45vmin; left: 81vmin; }
+.pin--3-6 { top: 11vmin; left: 39vmin; }
+.pin--3-7 { top: 36vmin; left: 38vmin; }
 
 /* Pins for floor 4 */
-.pin--4-1 { top: 55vmin; left: 21vmin; }
-.pin--4-2 { top: 18vmin; left: 20vmin; }
-.pin--4-3 { top: 21vmin; left: 88vmin; }
-.pin--4-4 { top: 52vmin; left: 74vmin; }
-.pin--4-5 { top: 33vmin; left: 38vmin; }
-.pin--4-6 { top: 39vmin; left: 56vmin; }
-.pin--4-7 { top: 58vmin; left: 10vmin; }
+.pin--4-1 { top: 22vmin; left: 46vmin; }
+.pin--4-2 { top: 23vmin; left: 52vmin; }
+.pin--4-3 { top: 21vmin; left: 40vmin; }
+.pin--4-4 { top: 18vmin; left: 32vmin; }
+.pin--4-5 { top: 36vmin; left: 56vmin; }
+.pin--4-6 { top: 24vmin; left: 33vmin; }
+.pin--4-7 { top: 45vmin; left: 33vmin; }
 
 /* Mobile compatability */
 .open-search,
