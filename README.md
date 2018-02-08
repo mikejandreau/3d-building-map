@@ -4,4 +4,4 @@ An interactive 3D building map concept with a sidebar search and pin indicators 
 
 Demo: 
 
-![Demo](https://www.dropbox.com/s/bgtgokx1d77x3ms/librarydemo1.gif??raw=1)
+![Demo](https://www.dropbox.com/s/bgtgokx1d77x3ms/librarydemo1.gif?raw=1)
