@@ -209,11 +209,14 @@ button:focus {
 }
 
 .levels {
-	width: 96vmin;
+	width: 84vmin;
+	// width: 96vmin;
 	height: 64vmin;
-	margin: -32vmin 0 0 -48vmin;
+	margin: -32vmin 0 0 -42vmin;
+	// margin: -32vmin 0 0 -48vmin;
 	transition: transform 0.3s;
 	transform-style: preserve-3d;
+	// border: 1px solid green;
 }
 
 .surroundings,
@@ -247,14 +250,26 @@ button:focus {
     line-height: 0;
     position: absolute;
     z-index: 100;
-    top: -1em;
-    left: 7em;
+    // top: -1em;
+    // left: 7em;
 	white-space: nowrap;
 	color: #7d7d86;
 	// rotation of floor level numbers
 	transform: rotateZ(45deg) rotateX(-70deg) translateZ(5vmin);
 	transition: transform 1s, color 0.3s;
 	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+
+
+    top: -1em;
+    left: 2em;
+    background: #bdbdbd;
+    color: #fff;
+    font-size: 1.2em;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    width: 2.8rem;
+    text-align: center;
+    border-radius: 4px;
 
 
 	// border: 1px solid #bbb;
@@ -275,11 +290,11 @@ button:focus {
 
 .level:hover::after,
 .level--current::after {
-	color: #515158;
+	// color: #515158;
 	// border-color: #a6a3a8;
-	// color: #fff;
-	// // background: #bdbdbd;
-	// background: #a6a3a8;
+	color: #fff;
+	// background: #bdbdbd;
+	background: #a6a3a8;
 }
 
 .level--current::after {
@@ -982,7 +997,7 @@ button:focus {
 .pin--4-4 { top: 18vmin; left: 32vmin; }
 .pin--4-5 { top: 36vmin; left: 56vmin; }
 .pin--4-6 { top: 24vmin; left: 33vmin; }
-.pin--4-7 { top: 45vmin; left: 33vmin; }
+.pin--4-7 { top: 45vmin; left: 27vmin; }
 
 /* Mobile compatability */
 .open-search,
