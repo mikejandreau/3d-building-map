@@ -168,37 +168,46 @@ button:focus{outline:0}
 .icon--pin{width:100%;height:100%}
 .icon--logo{position:absolute;top:11%;left:25%;width:50%;height:50%;fill:white;fill-opacity:.6;-webkit-transition:fill-opacity .3s;transition:fill-opacity .3s;opacity:0}
 .pin--active .icon--logo,.pin:hover .icon--logo{fill-opacity:1}
-.pin--1-1{top:4vmin;left:65vmin}
-.pin--1-2{top:9vmin;left:66vmin}
-.pin--1-3{top:3vmin;left:60vmin}
-.pin--1-4{top:14vmin;left:67vmin}
-.pin--1-5{top:4vmin;left:40vmin}
-.pin--1-6{top:6vmin;left:45vmin}
-.pin--1-7{top:36vmin;left:61vmin}
-.pin--1-8{top:56vmin;left:78vmin}
-.pin--1-9{top:51vmin;left:41vmin}
-.pin--2-1{top:10vmin;left:28vmin}
-.pin--2-2{top:43vmin;left:17vmin}
-.pin--2-3{top:31vmin;left:78vmin}
-.pin--2-4{top:36vmin;left:57vmin}
-.pin--2-5{top:19vmin;left:29vmin}
-.pin--2-6{top:39vmin;left:29vmin}
-.pin--2-7{top:39vmin;left:36vmin}
-.pin--2-8{top:57vmin;left:78vmin}
-.pin--2-9{top:24vmin;left:33vmin}
-.pin--3-2{top:45vmin;left:7vmin}
-.pin--3-3{top:20vmin;left:47vmin}
-.pin--3-4{top:19vmin;left:34vmin}
-.pin--3-5{top:45vmin;left:74vmin}
-.pin--3-6{top:11vmin;left:34vmin}
-.pin--3-7{top:36vmin;left:29vmin}
-.pin--4-1{top:22vmin;left:39vmin}
-.pin--4-2{top:23vmin;left:44vmin}
-.pin--4-3{top:21vmin;left:34vmin}
-.pin--4-4{top:18vmin;left:26vmin}
-.pin--4-5{top:36vmin;left:53vmin}
-.pin--4-6{top:24vmin;left:27vmin}
-.pin--4-7{top:45vmin;left:27vmin}
+.miller .pin--1-1{top:4vmin;left:65vmin}
+.miller .pin--1-2{top:9vmin;left:66vmin}
+.miller .pin--1-3{top:3vmin;left:60vmin}
+.miller .pin--1-4{top:14vmin;left:67vmin}
+.miller .pin--1-5{top:4vmin;left:40vmin}
+.miller .pin--1-6{top:6vmin;left:45vmin}
+.miller .pin--1-7{top:36vmin;left:61vmin}
+.miller .pin--1-8{top:56vmin;left:78vmin}
+.miller .pin--1-9{top:51vmin;left:41vmin}
+.miller .pin--2-1{top:10vmin;left:28vmin}
+.miller .pin--2-2{top:43vmin;left:17vmin}
+.miller .pin--2-3{top:31vmin;left:78vmin}
+.miller .pin--2-4{top:36vmin;left:57vmin}
+.miller .pin--2-5{top:19vmin;left:29vmin}
+.miller .pin--2-6{top:39vmin;left:29vmin}
+.miller .pin--2-7{top:39vmin;left:36vmin}
+.miller .pin--2-8{top:57vmin;left:78vmin}
+.miller .pin--2-9{top:24vmin;left:33vmin}
+.miller .pin--3-2{top:45vmin;left:7vmin}
+.miller .pin--3-3{top:20vmin;left:47vmin}
+.miller .pin--3-4{top:19vmin;left:34vmin}
+.miller .pin--3-5{top:45vmin;left:74vmin}
+.miller .pin--3-6{top:11vmin;left:34vmin}
+.miller .pin--3-7{top:36vmin;left:29vmin}
+.miller .pin--4-1{top:22vmin;left:39vmin}
+.miller .pin--4-2{top:23vmin;left:44vmin}
+.miller .pin--4-3{top:21vmin;left:34vmin}
+.miller .pin--4-4{top:18vmin;left:26vmin}
+.miller .pin--4-5{top:36vmin;left:53vmin}
+.miller .pin--4-6{top:24vmin;left:27vmin}
+.miller .pin--4-7{top:45vmin;left:27vmin}
+.bixler .pin--1-1{top:4vmin;left:65vmin}
+.bixler .pin--1-2{top:9vmin;left:66vmin}
+.bixler .pin--1-3{top:3vmin;left:60vmin}
+.bixler .pin--1-4{top:14vmin;left:67vmin}
+.bixler .pin--1-5{top:4vmin;left:40vmin}
+.bixler .pin--1-6{top:6vmin;left:45vmin}
+.bixler .pin--1-7{top:36vmin;left:61vmin}
+.bixler .pin--1-8{top:56vmin;left:78vmin}
+.bixler .pin--1-9{top:51vmin;left:41vmin}
 .open-search,.close-search{display:none}
 @media screen and (max-width:1023px),screen and (max-height:767px){.main{width:100vw}
 .spaces-list,.search{width:300px;right:-100%;left:auto;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out}
