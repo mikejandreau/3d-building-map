@@ -168,14 +168,14 @@ button:focus{outline:0}
 .icon--pin{width:100%;height:100%}
 .icon--logo{position:absolute;top:11%;left:25%;width:50%;height:50%;fill:white;fill-opacity:.6;-webkit-transition:fill-opacity .3s;transition:fill-opacity .3s;opacity:0}
 .pin--active .icon--logo,.pin:hover .icon--logo{fill-opacity:1}
-.miller .pin--1-1{top:4vmin;left:65vmin}
-.miller .pin--1-2{top:9vmin;left:66vmin}
-.miller .pin--1-3{top:3vmin;left:60vmin}
-.miller .pin--1-4{top:14vmin;left:67vmin}
-.miller .pin--1-5{top:4vmin;left:40vmin}
-.miller .pin--1-6{top:6vmin;left:45vmin}
-.miller .pin--1-7{top:36vmin;left:61vmin}
-.miller .pin--1-8{top:56vmin;left:78vmin}
+.miller .pin--1-1{top:4vmin;left:60vmin}
+.miller .pin--1-2{top:9vmin;left:60vmin}
+.miller .pin--1-3{top:3vmin;left:55vmin}
+.miller .pin--1-4{top:14vmin;left:60vmin}
+.miller .pin--1-5{top:4vmin;left:34vmin}
+.miller .pin--1-6{top:6vmin;left:38vmin}
+.miller .pin--1-7{top:36vmin;left:55vmin}
+.miller .pin--1-8{top:56vmin;left:72vmin}
 .miller .pin--1-9{top:51vmin;left:41vmin}
 .miller .pin--2-1{top:10vmin;left:28vmin}
 .miller .pin--2-2{top:43vmin;left:17vmin}
