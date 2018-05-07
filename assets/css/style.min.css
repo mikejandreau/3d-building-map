@@ -205,9 +205,10 @@ button:focus{outline:0}
 .bixler .pin--1-4{top:14vmin;left:67vmin}
 .bixler .pin--1-5{top:4vmin;left:40vmin}
 .bixler .pin--1-6{top:6vmin;left:45vmin}
-.bixler .pin--1-7{top:36vmin;left:61vmin}
+.bixler .pin--1-7{top:34vmin;left:36vmin}
 .bixler .pin--1-8{top:56vmin;left:78vmin}
 .bixler .pin--1-9{top:51vmin;left:41vmin}
+.st2{fill:#eee}
 .open-search,.close-search{display:none}
 @media screen and (max-width:1023px),screen and (max-height:767px){.main{width:100vw}
 .spaces-list,.search{width:300px;right:-100%;left:auto;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out}
