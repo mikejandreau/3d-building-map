@@ -116,8 +116,8 @@ gulp.task( 'scripts', function() {
 
 // WATCH TASK
 // Watch files for changes and reload
-gulp.task( 'default', ['styles', 'scripts', 'browser-sync'], function () {
+gulp.task( 'default', gulp.series(gulp.parallel('styles', 'scripts', 'browser-sync'), function () {
   gulp.watch( projectHTMLWatchFiles, reload ); // Reload on PHP file changes.
   gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
   gulp.watch( scriptJSWatchFiles, [ 'scripts', reload ] ); // Reload on scripts file changes.
-});
+}));
