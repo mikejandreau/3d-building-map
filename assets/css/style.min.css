@@ -46,7 +46,7 @@ button:hover{color:#515158;outline:0}
 button:focus{outline:0}
 .hidden{position:absolute;overflow:hidden;width:0;height:0;pointer-events:none}
 .icon{display:block;width:1em;height:1em;margin:0 auto;fill:currentColor}
-.container{position:relative;overflow-x:hidden;width:100vw;height:100vh}
+.map-container{position:relative;overflow-x:hidden;width:100vw;height:100vh}
 .library-header{position:absolute;z-index:100;top:0;left:0;padding:1.5em 1.2em}
 .library-header h1{font-size:1.5em;font-weight:normal;line-height:1;margin:0 0 .5em}
 .library-header ul{list-style-type:none;margin:0 .1em;padding:0}
@@ -58,7 +58,7 @@ button:focus{outline:0}
 .legend ul{margin:0;padding:0;list-style:none}
 .legend li{font-size:.8em;line-height:20px}
 .legend li span{font-size:2.6em;line-height:1em;position:relative;top:4px;margin-right:5px}
-.main{position:fixed;top:0;left:0;overflow:hidden;width:calc(100vw - 300px);height:100vh}
+.map-main{position:fixed;top:0;left:0;overflow:hidden;width:calc(100vw - 300px);height:100vh}
 .building{position:relative;width:100%;height:100%;pointer-events:none;-webkit-perspective:3500px;perspective:3500px;-webkit-perspective-origin:0 50%;perspective-origin:0 50%;-webkit-transition:-webkit-transform .8s;transition:-webkit-transform .8s;transition:transform .8s;transition:transform .8s,-webkit-transform .8s;-webkit-transition-timing-function:cubic-bezier(0.2,1,0.3,1);transition-timing-function:cubic-bezier(0.2,1,0.3,1)}
 .building.building--content-open{-webkit-transform:translate3d(0,-25%,0) scale3d(0.8,0.8,1);transform:translate3d(0,-25%,0) scale3d(0.8,0.8,1)}
 .surroundings,.levels{position:absolute;top:50%;left:50%}
@@ -210,13 +210,13 @@ button:focus{outline:0}
 .bixler .pin--1-9{top:51vmin;left:41vmin}
 .st2{fill:#eee}
 .open-search,.close-search{display:none}
-@media screen and (max-width:1023px),screen and (max-height:767px){.main{width:100vw}
+@media screen and (max-width:1023px),screen and (max-height:767px){.map-main{width:100vw}
 .spaces-list,.search{width:300px;right:-100%;left:auto;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out}
 .spaces-list--open,.spaces-list--open .search{right:0}
 .open-search,.close-search{position:absolute;display:block;top:0;right:0;z-index:1000}
 .buildingnav{top:4em}
-.container{overflow:hidden}
-.container--overflow{overflow-y:auto}
+.map-container{overflow:hidden}
+.map-container--overflow{overflow-y:auto}
 .content__item{overflow:auto}
 .library-header{padding-right:4em;text-align:left}
 .library-header p{display:none}
