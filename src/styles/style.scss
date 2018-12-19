@@ -155,7 +155,7 @@ button:focus {
 
 
 
-.main {
+.map-main {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1060,7 +1060,7 @@ button:focus {
 
 
 @media screen and (max-width: 1023px), screen and (max-height: 767px) {
-	.main {
+	.map-main {
 		width: 100vw;
 	}
 	.spaces-list,
