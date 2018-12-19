@@ -71,7 +71,7 @@ button:focus {
 	fill: currentColor;
 }
 
-.container {
+.map-container {
 	position: relative;
 	overflow-x: hidden;
 	width: 100vw;
@@ -1086,10 +1086,10 @@ button:focus {
 	.buildingnav {
 		top: 4em;
 	}
-	.container {
+	.map-container {
 		overflow: hidden;
 	}
-	.container--overflow {
+	.map-container--overflow {
 		overflow-y: auto;
 	}
 	.content__item {
