@@ -1938,7 +1938,7 @@ module.exports = function(text, pattern, options) {
 		// open search ctrl
 		openSearchCtrl = document.querySelector('button.open-search'),
 		// main container
-		containerEl = document.querySelector('.container'),
+		containerEl = document.querySelector('.map-container'),
 		// close search ctrl
 		closeSearchCtrl = spacesListEl.querySelector('button.close-search');
 
@@ -2352,7 +2352,7 @@ module.exports = function(text, pattern, options) {
 		showAllLevels();
 
 		classie.add(spacesListEl, 'spaces-list--open');
-		classie.add(containerEl, 'container--overflow');
+		classie.add(containerEl, 'map-container--overflow');
 	}
 
 	/**
@@ -2360,7 +2360,7 @@ module.exports = function(text, pattern, options) {
 	 */
 	function closeSearch() {
 		classie.remove(spacesListEl, 'spaces-list--open');
-		classie.remove(containerEl, 'container--overflow');
+		classie.remove(containerEl, 'map-container--overflow');
 	}
 	
 	init();
