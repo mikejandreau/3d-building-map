@@ -55,16 +55,6 @@ var sourcemaps   = require('gulp-sourcemaps'); // Maps code in a compressed file
 var browserSync  = require('browser-sync').create(); // Reloads browser and injects CSS. Time-saving synchronised browser testing.
 var reload       = browserSync.reload; // For manual browser reload.
 
-// BROWSERSYNC
-// Live reload, CSS/JS injection, and localhost tunneling 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: projectURL
-        }
-    });
-});
-
 // STYLE TASK
 // Compile SCSS, add vendor prefixes, minify, save to CSS folder
 gulp.task('styles', function (done) {
@@ -112,6 +102,32 @@ gulp.task( 'scripts', function(done) {
   .pipe( gulp.dest( scriptDestination ) )
   done();
 });
+
+
+
+
+
+
+
+
+// Wait for jekyll-build, then launch the Server
+gulp.task('browser-sync', gulp.series("styles", "scripts", function(done) {
+  browserSync.init({
+    server: {
+      baseDir: projectURL
+    },
+    notify: {
+      styles: {
+        top: "auto",
+        bottom: "0",
+        borderBottomLeftRadius: "0",
+      }
+    },
+    port: 3000
+  });
+  done();
+}));
+
 
 
 
