@@ -52,7 +52,6 @@ var rename       = require('gulp-rename'); // Renames files E.g. style.css -> st
 var lineec       = require('gulp-line-ending-corrector'); // Consistent Line Endings for non UNIX systems.
 var filter       = require('gulp-filter'); // Enables you to work on a subset of the original files by filtering them using globbing.
 var sourcemaps   = require('gulp-sourcemaps'); // Maps code in a compressed file
-var notify       = require('gulp-notify'); // Sends message notification to you
 var browserSync  = require('browser-sync').create(); // Reloads browser and injects CSS. Time-saving synchronised browser testing.
 var reload       = browserSync.reload; // For manual browser reload.
 
@@ -68,7 +67,7 @@ gulp.task('browser-sync', function() {
 
 // STYLE TASK
 // Compile SCSS, add vendor prefixes, minify, save to CSS folder
-gulp.task('styles', function () {
+gulp.task('styles', function (done) {
   gulp.src( styleSRC )
   .pipe( sourcemaps.init() )
   .pipe( sass( {
@@ -95,12 +94,12 @@ gulp.task('styles', function () {
   .pipe( gulp.dest( styleDestination ) )
   .pipe( filter( '**/*.css' ) ) // Filtering stream to only css files
   .pipe( browserSync.stream() ) // Reloads style.min.css if that is enqueued
-  .pipe( notify( { message: 'TASK: "styles" Completed!', onLast: true } ) )
+  done();
 });
 
 // SCRIPTS TASK
 // Get JS source files, error check, concat, rename, minify, save to JS folder
-gulp.task( 'scripts', function() {
+gulp.task( 'scripts', function(done) {
   gulp.src( scriptSRC )
   .pipe(jshint())
   .pipe(jshint.reporter('jshint-stylish'))
@@ -111,13 +110,26 @@ gulp.task( 'scripts', function() {
   .pipe( uglify() )
   .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
   .pipe( gulp.dest( scriptDestination ) )
-  .pipe( notify( { message: 'TASK: "scripts" Completed!', onLast: true } ) );
+  done();
 });
 
-// WATCH TASK
-// Watch files for changes and reload
-gulp.task( 'default', gulp.series(gulp.parallel('styles', 'scripts', 'browser-sync'), function () {
-  gulp.watch( projectHTMLWatchFiles, reload ); // Reload on PHP file changes.
-  gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
-  gulp.watch( scriptJSWatchFiles, [ 'scripts', reload ] ); // Reload on scripts file changes.
-}));
+
+
+// Reload helper function
+function reload(done) {
+  browserSync.reload();
+  done();
+}
+
+// Watch files
+function watch(done) {
+  gulp.watch(styleWatchFiles, gulp.series("styles", reload));
+  gulp.watch(scriptJSWatchFiles, gulp.series("scripts", reload));
+  gulp.watch(projectHTMLWatchFiles, reload);
+  done();
+}
+
+// Default task
+gulp.task("default", gulp.series("browser-sync", watch));
+
+
