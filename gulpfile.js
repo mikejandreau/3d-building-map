@@ -123,7 +123,7 @@ gulp.task('browser-sync', gulp.series("styles", "scripts", function(done) {
         borderBottomLeftRadius: "0",
       }
     },
-    port: 3000
+    port: 4000
   });
   done();
 }));
