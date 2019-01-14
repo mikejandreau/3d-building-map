@@ -105,6 +105,7 @@ button:focus{outline:0}
 .map__lake{fill:#bdbdbd}
 .map__steps{fill:#efefef}
 .map__space{-webkit-transition:fill-opacity .8s;transition:fill-opacity .8s;fill:#bdbdbd;fill-opacity:.6}
+.map__text{fill:#fff}
 .level--current .map__space{fill-opacity:1}
 .map__space--selected{fill:#a4a4a4}
 .content{position:absolute;top:100%;width:100%;height:50%}
