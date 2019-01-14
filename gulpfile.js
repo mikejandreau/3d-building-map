@@ -20,7 +20,7 @@ var scriptJSWatchFiles     = "./src/scripts/**/*.js"; // Path to all JS files.
 var projectHTMLWatchFiles  = "./**/*.html"; // Path to all HTML files
 
 // Browsers for autoprefixing
-const AUTOPREFIXER_BROWSERS = [
+const autoprefixBrowsers = [
     "last 2 versions", "> 1%", 
     "ie >= 9", 
     "ie_mob >= 10", 
@@ -71,7 +71,7 @@ gulp.task("styles", function (done) {
   .on("error", console.error.bind(console))
   .pipe( sourcemaps.write( { includeContent: false } ) )
   .pipe( sourcemaps.init( { loadMaps: true } ) )
-  .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
+  .pipe( autoprefixer( autoprefixBrowsers ) )
   .pipe( sourcemaps.write ( "./" ) ) // Write sourcemap to same folder
   .pipe( lineec() ) // Consistent Line Endings for non UNIX systems
   .pipe( gulp.dest( styleDestination ) )
@@ -141,7 +141,7 @@ function reload(done) {
 function watch(done) {
   gulp.watch(styleWatchFiles, gulp.series("styles", reload));
   gulp.watch(scriptJSWatchFiles, gulp.series("scripts", reload));
-  gulp.watch(projectHTMLWatchFiles, reload);
+  gulp.watch(projectHTMLWatchFiles, gulp.series(reload));
   done();
 }
 
