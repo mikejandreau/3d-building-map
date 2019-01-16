@@ -520,6 +520,24 @@ button:focus {
 	fill: #fff;
 }
 
+
+.map__stairs, 
+.map__walls {
+	fill: none;
+	stroke-miterlimit: 10;
+}
+
+.map__stairs {
+	stroke: #231f20;
+	stroke-width: 0.2px;
+}
+
+.map__walls {
+	stroke: #676767;
+	stroke-width: 0.75px;
+}
+
+
 .level--current .map__space {
 	fill-opacity: 1;
 }

@@ -106,6 +106,9 @@ button:focus{outline:0}
 .map__steps{fill:#efefef}
 .map__space{-webkit-transition:fill-opacity .8s;transition:fill-opacity .8s;fill:#bdbdbd;fill-opacity:.6}
 .map__text{fill:#fff}
+.map__stairs,.map__walls{fill:none;stroke-miterlimit:10}
+.map__stairs{stroke:#231f20;stroke-width:.2px}
+.map__walls{stroke:#676767;stroke-width:.75px}
 .level--current .map__space{fill-opacity:1}
 .map__space--selected{fill:#a4a4a4}
 .content{position:absolute;top:100%;width:100%;height:50%}
