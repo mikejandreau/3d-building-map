@@ -438,8 +438,10 @@ button:focus {
 /* Level nav */
 .buildingnav {
 	position: absolute;
-	top: 0;
-	right: 0;
+	// top: 0;
+	// right: 0;
+	top: 5px;
+	right: 20px;
 	text-align: center;
 	transition: opacity 0.8s;
 }
@@ -455,11 +457,12 @@ button:focus {
 	display: block;
 	width: 2em;
 	height: 2em;
-	margin: 0;
+	margin: 0 0 10px;
 	padding: 0;
 	color: #fff;
 	border: 0;
 	background: #d7d7dc;
+	border-radius: 50%;
 }
 
 .boxbutton--dark {
@@ -661,8 +664,10 @@ button:focus {
 .content__button {
 	position: absolute;
 	z-index: 200;
-	top: -100%;
-	right: 0;
+	// top: -100%;
+	// right: 0;
+	top: -99%;
+	right: 20px;
 	transition: opacity 0.3s 0.7s;
 }
 
