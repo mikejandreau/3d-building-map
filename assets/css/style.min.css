@@ -154,7 +154,7 @@ button:focus{outline:0}
 .list__item--active .list__link,.list__link:hover{color:#515158}
 .level__pins{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
 .level__pins--active{pointer-events:auto}
-.pin{position:absolute;width:5.5vmin;height:8.25vmin;margin:-8.25vmin 0 0 -2.25vmin;-webkit-transform:rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);transform:rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);-webkit-transform-origin:50% 100%;-ms-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
+.pin{position:absolute;width:4.5vmin;height:6.25vmin;margin:-6.25vmin 0 0 -2.25vmin;-webkit-transform:rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);transform:rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);-webkit-transform-origin:50% 100%;-ms-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
 .pin__icon{position:relative;display:block;width:100%;height:100%;opacity:0;-webkit-transform:translate3d(0,-100px,0);transform:translate3d(0,-100px,0);-webkit-transition:opacity .3s,-webkit-transform .3s;transition:opacity .3s,-webkit-transform .3s;transition:opacity .3s,transform .3s;transition:opacity .3s,transform .3s,-webkit-transform .3s;-webkit-transition-timing-function:cubic-bezier(0.2,1,0.3,1);transition-timing-function:cubic-bezier(0.2,1,0.3,1)}
 .level__pins--active .pin__icon{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .pin:nth-child(2) .pin__icon{-webkit-transition-delay:.05s;transition-delay:.05s}

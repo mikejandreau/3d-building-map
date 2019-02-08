@@ -873,9 +873,14 @@ button:focus {
 
 .pin {
 	position: absolute;
-	width: 5.5vmin;
-	height: 8.25vmin;
-	margin: -8.25vmin 0 0 -2.25vmin; /* let the bottom tip be the reference point for individual coordinates */
+	// width: 5.5vmin;
+	// height: 8.25vmin;
+	// margin: -8.25vmin 0 0 -2.25vmin; /* let the bottom tip be the reference point for individual coordinates */
+	width: 4.5vmin;
+	height: 6.25vmin;
+	margin: -6.25vmin 0 0 -2.25vmin;
+
+
 	// rotation of pins
 	transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg);
 	transform-origin: 50% 100%;
